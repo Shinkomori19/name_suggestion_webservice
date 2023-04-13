@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+  Name: Shin Komori
+  Date: November 18, 2022
+
+  This is the index.html page for my webservice. This is a website that helps
+  users to name their hamsters.
+  Users also can add their own ideas of hamster names to data stored in the
+  server side.
+  Style and interactions are defined in other files.
+
+  GIF for error message is from Reaction GIFs(https://www.reactiongifs.us/),
+  and API used in this website is Excuser API(https://excuser.herokuapp.com/)
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Name hamsters</title>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <h1>Name your hamsters!!</h1>
+    <section>
+      <p>
+        Don't konw how to name your hamsters? We help you name them.
+        Simply click the button below to see some possible names for your cute
+        hamster!
+      </p>
+    </section>
+    <section>
+      <button>Click here to get a name!!</button>
+      <img class="hidden" src="img/crying.gif" alt="An img displayed when there is an error">
+      <article id="name-container"></article>
+    </section>
+
+    <section>
+      <p>
+        Share your hamster name ideas with others. If you submit your ideas, they will
+        be displayed for users randomly aftera that.
+      </p>
+      <form>
+        Hamster name: <input name= "name" type="text" required>
+        <button id="submit-btn">Submit!</button>
+      </form>
+      <article id="feedback"></article>
+    </section>
+
+  </body>
+</html>
